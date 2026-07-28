@@ -4,15 +4,18 @@
 int ledPin = 2;
 int ldrPin = 34;
 int ldrMax = 4095;
+int ledValue = 10;
+int thresholdValue = 500;
 
 void setup() {
     Serial.begin(9600);
     
     pinMode(ledPin, OUTPUT);
     pinMode(ldrPin, INPUT);
+
+    ledUpdate(ledValue);
     
     Serial.printf("SmartLamp Initialized.\n");
-
 
 }
 
@@ -30,16 +33,28 @@ void loop() {
 }
 
 void processCommand(String command) {
-    // compare o comando com os comandos possíveis e execute a ação correspondente
     if (command.startsWith("SET_LED ")) {
         String valorStr = command.substring(8);
-        int valor = valorStr.toInt();
-        ledUpdate(valor);
+        ledValue = valorStr.toInt(); 
+        ledUpdate(ledValue);
         Serial.printf("RES SET_LED 1\n"); 
     }
+    else if (command == "GET_LED") {
+        Serial.printf("RES GET_LED %d\n", ledValue);
+    }
+    
     else if (command == "GET_LDR") {
         int valorLdr = ldrGetValue();
         Serial.printf("RES GET_LDR %d\n", valorLdr);
+    }      
+    
+    else if (command.startsWith("SET_THRESHOLD ")) {
+        String valorStr = command.substring(14);
+        thresholdValue = valorStr.toInt(); 
+        Serial.printf("RES SET_THRESHOLD 1\n");
+    }
+    else if (command == "GET_THRESHOLD") {
+        Serial.printf("RES GET_THRESHOLD %d\n", thresholdValue);
     }      
 }
 
