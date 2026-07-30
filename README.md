@@ -13,6 +13,7 @@ Bem-vindo ao repositório da Equipe 03 do HandsON de Linux do DevTITANS! Este pr
 - [Configuração de Hardware](#configuração-de-hardware)
 - [Instalação](#instalação)
 - [Uso](#uso)
+- [Relatório Final](#relatório-final)
 - [Contato](#contato)
 
 ## Contribuidores
@@ -24,11 +25,11 @@ Bem-vindo ao repositório da Equipe 03 do HandsON de Linux do DevTITANS! Este pr
 <img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
 <img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
 
-- **Nome do(a) Aluno(a) 01:** Desenvolvedor do Firmware e Mantenedor do Projeto
-- **Nome do(a) Aluno(a) 02:** Desenvolvedor do Firmware
-- **Nome do(a) Aluno(a) 03:** Desenvolvedor do Driver Linux
-- **Nome do(a) Aluno(a) 04:** Desenvolvedor do Driver Linux
-- **Nome do(a) Aluno(a) 05:** Desenvolvedor do Firmware e Escritor da Documentação
+- Aline Lima
+- Sophia Sales
+- Anderson
+- Isabele Nascimento
+- Miguel Castro
 
 ## Introdução
 
@@ -139,6 +140,13 @@ Depois que o driver e o firmware estiverem configurados, você poderá interagir
     sudo rmmod smartlamp
     ```
     
+## Relatório Final
+
+A documentação completa dos experimentos práticos realizados com o SmartLamp (compilação e carregamento do driver, controle do LED via `sysfs`, leitura do sensor LDR e configuração do limiar de acionamento, com fotos e vídeos da bancada de testes) está disponível na [Wiki do projeto](https://github.com/alinaolima/Hands-On-Linux/wiki):
+
+- [Home da Wiki](https://github.com/alinaolima/Hands-On-Linux/wiki)
+- [Relatório Final](https://github.com/alinaolima/Hands-On-Linux/wiki/Relatorio-Final)
+
 ## Contato
 
 Para perguntas, sugestões ou feedback, entre em contato com o mantenedor do projeto em [maintainer@example.com](mailto:maintainer@example.com).
