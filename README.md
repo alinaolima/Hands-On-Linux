@@ -25,11 +25,12 @@ Bem-vindo ao repositório da Equipe 03 do HandsON de Linux do DevTITANS! Este pr
 <img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
 <img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
 
-- Aline Lima
-- Sophia Sales
-- Anderson
-- Isabele Nascimento
-- Miguel Castro
+
+- Aline Lima: Desenvolvedor do Firmware e Mantenedor do Projeto
+- Isabele Nascimento: Desenvolvedor do Firmware
+- Miguel Castro: Desenvolvedor do Driver Linux
+- Anderson: Desenvolvedor do Driver Linux
+- Sophia Sales: Desenvolvedor do Firmware e Escritor da Documentação
 
 ## Introdução
 
